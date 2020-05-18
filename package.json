@@ -2,7 +2,7 @@
 	"name": "bucklescript-tea-showcase",
 	"version": "0.1.0",
 	"scripts": {
-		"format": "find src __tests__ -name '*.ml*' -exec bash -c 'ocamlformat -i \"$0\"' {} \\;",
+		"format": "find src __tests__ -name '*.re*' -exec bash -c 'bsrefmt -i \"$0\"' {} \\;",
 		"test": "jest",
 		"clean": "bsb -clean-world",
 		"build": "bsb -make-world",
